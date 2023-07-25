@@ -1,22 +1,27 @@
-import { StyleSheet, Text, View, Button } from 'react-native';
-import { AuthProvider } from '@squantumengine/react-native-sqeid';
-import GetConfigButton from './Components/GetConfigButton';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import Settings from './Screens/Settings';
+import Liveness from './Screens/Liveness';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <AuthProvider clientId={"simas-id-amrita"} env={"development"}>
-      <View style={styles.container}>
-        <GetConfigButton />
-      </View>
-    </AuthProvider>
+    <>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Settings"
+          component={Settings}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Liveness"
+          component={Liveness}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+    </>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+};
