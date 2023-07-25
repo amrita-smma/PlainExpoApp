@@ -8,7 +8,7 @@ import {
   useRoute
 } from '@react-navigation/native';
 import LivenessButton from '../Components/LivenessButton';
-// import { KycProvider } from '@squantumengine/react-native-sqekyc';
+import { KycProvider } from '@squantumengine/react-native-sqekyc';
 
 const Liveness = () => {
 
@@ -16,13 +16,13 @@ const Liveness = () => {
   const { env } = route?.params ?? '';
 
   return (
-    // <KycProvider env={env}>
+    <KycProvider env={env}>
       <ScrollView style={styles.container}>
         <SafeAreaView />
         <View style={styles.divider16} />
         <LivenessButton/>
       </ScrollView>
-    // </KycProvider>
+    </KycProvider>
   );
 };
 
