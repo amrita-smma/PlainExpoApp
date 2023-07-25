@@ -32,7 +32,13 @@
       [
         "./plugins/sqeid/sqeid-plugin.js",
         {
-          "env": "development"
+          "env": "staging"
+        }
+      ],
+      [
+        "./plugins/sqekyc/sqekyc-plugin.js",
+        {
+          "env": "staging"
         }
       ]
     ]

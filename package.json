@@ -8,12 +8,14 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@squantumengine/react-native-sqeid": "file:squantumengine-react-native-sqeid-0.2.1.tgz",
+    "@squantumengine/react-native-sqeid": "0.3.2",
+    "@squantumengine/react-native-sqekyc": "0.1.1",
     "expo": "~48.0.18",
     "expo-splash-screen": "~0.18.2",
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
-    "react-native": "0.71.8"
+    "react-native": "0.71.8",
+    "react-native-image-resizer": "^1.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

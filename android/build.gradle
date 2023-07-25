@@ -39,6 +39,15 @@ allprojects {
             password = githubProperties['gpr.key']
           }
         }
+          // [sqekyc-package]
+        maven {
+          name = "GitHubPackages"
+          url = uri("https://maven.pkg.github.com/sqesmma/sqekyc-android-package")
+          credentials {
+            username = githubProperties['gpr.usr']
+            password = githubProperties['gpr.key']
+          }
+        }
         jcenter()
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm

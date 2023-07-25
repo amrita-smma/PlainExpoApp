@@ -1,23 +1,22 @@
-import { Button } from 'react-native';
-import {  AuthProvider, useAuth } from '@squantumengine/react-native-sqeid';
+import { Button, Alert } from 'react-native';
+import { useAuth } from '@squantumengine/react-native-sqeid';
 
 const GetConfigButton = () => {
-    const { getConfig, testFunction } = useAuth();
-    const getConfigButtonPressed = (() => {
-        console.log("check1")
+    const { getConfig } = useAuth();
+
+    const onGetConfigButtonPressed = () => {
+        console.log("getConfig called")
         getConfig().then(response => {
-        // Success
-        console.log(response)
+          Alert.alert(`Success Get Config with`, `${JSON.stringify(response)}`)
         }).catch(err => {
-        // Failure
-        console.log(err)
+          Alert.alert(`Failed Get Config with ${err}`)
         })
-    })
+    }
 
     return (
     <Button 
     title='Get Config'
-    onPress={getConfigButtonPressed} />
+    onPress={onGetConfigButtonPressed} />
     );
 };
 
