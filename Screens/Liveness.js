@@ -1,42 +1,28 @@
-// import { useKyc } from '@squantumengine/react-native-sqekyc';
 import {
   SafeAreaView,
   View,
-  TouchableOpacity,
-  Text,
   ScrollView,
   StyleSheet
 } from 'react-native';
+import {
+  useRoute
+} from '@react-navigation/native';
+import LivenessButton from '../Components/LivenessButton';
+// import { KycProvider } from '@squantumengine/react-native-sqekyc';
 
-const livenessId = 'UImJAZLTQqHroT1b';
-const livenessLicenseId = '6dc1830f-5acc-5547-8d3a-0c9f80950ae4';
+const Liveness = () => {
 
-function Liveness({ navigation }) {
-  // const { startLivenessCheck } = useKyc();
-
-  const startLiveness = () => {
-    // startLivenessCheck(
-    //   livenessId,
-    //   livenessLicenseId,
-    //   3,
-    //   'Pastikan wajah anda berada di dalam area di bawah ini'
-    // )
-    //   .then((base64SelfieImage) => {
-    //     console.log(`Liveness Success`);
-    //   })
-    //   .catch((error) => {
-    //     console.log(`Liveness Failed`);
-    //   });
-  };
+  const route = useRoute();
+  const { env } = route?.params ?? '';
 
   return (
-    <ScrollView style={styles.container}>
-      <SafeAreaView />
-      <View style={styles.divider16} />
-      <TouchableOpacity style={styles.button} onPress={() => startLiveness()}>
-        <Text style={styles.sectionTitle}>Start Liveness Check</Text>
-      </TouchableOpacity>
-    </ScrollView>
+    // <KycProvider env={env}>
+      <ScrollView style={styles.container}>
+        <SafeAreaView />
+        <View style={styles.divider16} />
+        <LivenessButton/>
+      </ScrollView>
+    // </KycProvider>
   );
 };
 

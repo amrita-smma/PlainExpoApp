@@ -6,16 +6,22 @@ import {
   ScrollView,
   StyleSheet
 } from "react-native";
+import {
+  useNavigation
+} from '@react-navigation/native';
 import { AuthProvider } from '@squantumengine/react-native-sqeid';
 import GetConfigButton from '../Components/GetConfigButton';
 
-function Settings({ navigation }) {
+const Settings = () => {
+  const navigation = useNavigation();
 
   const defaultClientId = 'simas-id-amrita';
   const defaultEnv = 'staging';
 
-  const onStartButtonPressed = () => {
-    navigation.navigate("Liveness");
+  const onLivenessButtonPressed = () => {
+    navigation.navigate("Liveness", {
+      env: defaultEnv
+    });
   };
 
   return (
@@ -30,10 +36,10 @@ function Settings({ navigation }) {
           <View style={styles.contentBody}>
             <TouchableOpacity
               style={styles.btnStart}
-              onPress={onStartButtonPressed}
+              onPress={onLivenessButtonPressed}
             >
               <Text style={[styles.sectionTitle, { color: "#FFFFFF" }]}>
-                Let's Liveness Check
+                Liveness
               </Text>
             </TouchableOpacity>
           </View>
