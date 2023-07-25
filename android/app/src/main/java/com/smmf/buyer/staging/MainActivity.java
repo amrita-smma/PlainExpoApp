@@ -1,4 +1,4 @@
-package com.sqeid.plainapp;
+package com.smmf.buyer.staging;
 
 import android.os.Build;
 import android.os.Bundle;

@@ -113,9 +113,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace 'com.sqeid.plainapp'
+    namespace 'com.smmf.buyer.staging'
     defaultConfig {
-        applicationId 'com.sqeid.plainapp'
+        applicationId 'com.smmf.buyer.staging'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

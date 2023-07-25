@@ -394,7 +394,7 @@ PODS:
     - React-Core
     - Sentry
     - SimpleKeychain
-  - sqekyc (0.1.2):
+  - sqekyc (0.1.3):
     - OpenCV (= 2.4.9)
     - React-Core
   - Yoga (1.14.0)
@@ -613,7 +613,7 @@ SPEC CHECKSUMS:
   SentryPrivate: b58fc25b3a0ac7e3d4ec229be63d583e3314a47a
   SimpleKeychain: f8707c8e97b38c6a6e687b17732afc9bcef06439
   sqeid: 99440341f16f2b49eb3d1231b89d80439732b122
-  sqekyc: 84cc031c1d81bd09a853a3a3294409eb0e819829
+  sqekyc: c67ae9599a164d3389a04a7e4726f1df7d28ba4b
   Yoga: 065f0b74dba4832d6e328238de46eb72c5de9556
 
 PODFILE CHECKSUM: 137262e3321b4059b53cb78611742ecfa50b9c3f
