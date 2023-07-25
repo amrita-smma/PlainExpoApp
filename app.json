@@ -4,7 +4,6 @@
     "slug": "plain-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "notification": false,
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -39,6 +38,15 @@
         "./plugins/sqekyc/sqekyc-plugin.js",
         {
           "env": "staging"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static",
+            "deploymentTarget": "13.0"
+          }
         }
       ]
     ]
