@@ -13,6 +13,7 @@
 		38D45A7108C7A28B7440AFA1 /* Pods_plainapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B350869E572B4437E007EF /* Pods_plainapp.framework */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		6BCC2DA547D94622B07A9155 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E132207FBEF4E138E1341AB /* noop-file.swift */; };
+		ADBD89572A70502A005B2122 /* license.lic in Resources */ = {isa = PBXBuildFile; fileRef = ADBD89562A70502A005B2122 /* license.lic */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		6C2E3173556A471DD304B334 /* Pods-plainapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plainapp.debug.xcconfig"; path = "Target Support Files/Pods-plainapp/Pods-plainapp.debug.xcconfig"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-plainapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plainapp.release.xcconfig"; path = "Target Support Files/Pods-plainapp/Pods-plainapp.release.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = plainapp/SplashScreen.storyboard; sourceTree = "<group>"; };
+		ADBD89562A70502A005B2122 /* license.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.lic; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-plainapp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		13B07FAE1A68108700A75B9A /* plainapp */ = {
 			isa = PBXGroup;
 			children = (
+				ADBD89562A70502A005B2122 /* license.lic */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -198,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBD89572A70502A005B2122 /* license.lic in Resources */,
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
