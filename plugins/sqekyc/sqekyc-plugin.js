@@ -3,7 +3,11 @@ const path = require("path");
 const {
   withDangerousMod,
   withProjectBuildGradle,
+  IOSConfig,
+  withXcodeProject,
 } = require("@expo/config-plugins");
+
+const { getAppDelegateFilePath } = IOSConfig.Paths;
 
 const githubPackageTag = "[sqekyc-package]";
 const githubPackagesConfiguration = `// ${githubPackageTag}
@@ -78,19 +82,27 @@ const copyAndroidLicenseFile = (config, env) => {
   ])
 }
 
-const copyiOSLicenseFile = (config, env) => {
-  const platform = "ios";
-  return withDangerousMod(config, [
-    platform,
-    async (config) => {
-      const root = config.modRequest.platformProjectRoot
-      const sourcePath = path.resolve(__dirname, `./license/${env}/${platform}/license.lic`)
-      const destPath = `${root}`
+const copyAndAddiOSLicenseFileToXcodeProject = (config, env) => {
+  return withXcodeProject(
+    config, async (config) => {
+      const xcodeProject = config.modResults;
+      const { projectRoot, projectName } = config.modRequest;
+      const group = xcodeProject.pbxGroupByName(projectName);
+	    const key = xcodeProject.findPBXGroupKey({
+	      name: group.name,
+	      path: group.path,
+	    });
 
-      fs.copySync(sourcePath, path.join(destPath, "license.lic"))
+      const filename = 'license.lic';
+      const sourcePath = path.resolve(__dirname, `./license/${env}/ios`, filename)
+	    const sourceDir = path.dirname(getAppDelegateFilePath(projectRoot));
+      const dst = path.resolve(sourceDir, filename);
+      fs.writeFileSync(dst, fs.readFileSync(sourcePath, 'utf-8'));
+      xcodeProject.addSourceFile(`${projectName}/${filename}`, null, key);
+
       return config;
-    },
-  ])
+    }
+  );
 }
 
 const copyGithubPropertiesFile = (config) => {
@@ -110,7 +122,7 @@ module.exports = function (config, { env }) {
   console.log(env)
 
   config = copyAndroidLicenseFile(config, env)
-  config = copyiOSLicenseFile(config, env)
+  config = copyAndAddiOSLicenseFileToXcodeProject(config, env)
   config = copyGithubPropertiesFile(config)
   config = withGithubPackageRepository(config)
   return config
