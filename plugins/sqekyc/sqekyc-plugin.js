@@ -87,6 +87,7 @@ const copyAndAddiOSLicenseFileToXcodeProject = (config, env) => {
     config, async (config) => {
       const xcodeProject = config.modResults;
       const { projectRoot, projectName } = config.modRequest;
+
       const group = xcodeProject.pbxGroupByName(projectName);
 	    const key = xcodeProject.findPBXGroupKey({
 	      name: group.name,
@@ -98,7 +99,8 @@ const copyAndAddiOSLicenseFileToXcodeProject = (config, env) => {
 	    const sourceDir = path.dirname(getAppDelegateFilePath(projectRoot));
       const dst = path.resolve(sourceDir, filename);
       fs.writeFileSync(dst, fs.readFileSync(sourcePath, 'utf-8'));
-      xcodeProject.addSourceFile(`${projectName}/${filename}`, null, key);
+      xcodeProject.pbxCreateGroup("Resources");
+      xcodeProject.addResourceFile(`${projectName}/${filename}`, null, key);
 
       return config;
     }
