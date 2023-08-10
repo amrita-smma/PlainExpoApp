@@ -1,8 +1,8 @@
 import { Button } from 'react-native';
 import { useKyc } from '@squantumengine/react-native-sqekyc';
 
-const livenessId = 'UImJAZLTQqHroT1b';
-const livenessLicenseId = '6dc1830f-5acc-5547-8d3a-0c9f80950ae4';
+const livenessId = 'F0DH4bXRDf1F810e';
+const livenessLicenseId = 'd88e8653-3d3f-5973-83c5-93556cc1a4d5';
 
 const LivenessButton = () => {
     const { startLivenessCheck } = useKyc();
