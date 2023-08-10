@@ -82,7 +82,7 @@ const copyAndroidLicenseFile = (config, env) => {
   ])
 }
 
-const copyAndAddiOSLicenseFileToXcodeProject = (config, env) => {
+const copyAndAddiOSLicenseFileToXcodeProject = (config, env, filename) => {
   return withXcodeProject(
     config, async (config) => {
       const xcodeProject = config.modResults;
@@ -93,31 +93,6 @@ const copyAndAddiOSLicenseFileToXcodeProject = (config, env) => {
 	      path: group.path,
 	    });
 
-      const filename = 'license.lic';
-      const sourcePath = path.resolve(__dirname, `./license/${env}/ios`, filename)
-	    const sourceDir = path.dirname(getAppDelegateFilePath(projectRoot));
-      const dst = path.resolve(sourceDir, filename);
-      fs.writeFileSync(dst, fs.readFileSync(sourcePath, 'utf-8'));
-      xcodeProject.pbxCreateGroup("Resources");
-      xcodeProject.addResourceFile(`${projectName}/${filename}`, null, key);
-
-      return config;
-    }
-  );
-}
-
-const copyAndAddiOSSDKLicenseFileToXcodeProject = (config, env) => {
-  return withXcodeProject(
-    config, async (config) => {
-      const xcodeProject = config.modResults;
-      const { projectRoot, projectName } = config.modRequest;
-      const group = xcodeProject.pbxGroupByName(projectName);
-	    const key = xcodeProject.findPBXGroupKey({
-	      name: group.name,
-	      path: group.path,
-	    });
-
-      const filename = 'sdkLicense.lic';
       const sourcePath = path.resolve(__dirname, `./license/${env}/ios`, filename)
 	    const sourceDir = path.dirname(getAppDelegateFilePath(projectRoot));
       const dst = path.resolve(sourceDir, filename);
@@ -147,8 +122,8 @@ module.exports = function (config, { env }) {
   console.log(env)
 
   config = copyAndroidLicenseFile(config, env)
-  config = copyAndAddiOSLicenseFileToXcodeProject(config, env)
-  config = copyAndAddiOSSDKLicenseFileToXcodeProject(config, env)
+  config = copyAndAddiOSLicenseFileToXcodeProject(config, env, 'license.lic')
+  config = copyAndAddiOSLicenseFileToXcodeProject(config, env, 'sdkLicense.lic')
   config = copyGithubPropertiesFile(config)
   config = withGithubPackageRepository(config)
   return config
