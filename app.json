@@ -15,14 +15,14 @@
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "com.smmf.buyer.staging"
+      "bundleIdentifier": "com.smmf.dealer.staging"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.smmf.buyer.staging"
+      "package": "com.smmf.dealer.staging"
     },
     "web": {
       "favicon": "./assets/favicon.png"

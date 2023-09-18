@@ -1,4 +1,4 @@
-package com.smmf.buyer.staging;
+package com.smmf.dealer.staging;
 
 import android.app.Application;
 import android.content.res.Configuration;
