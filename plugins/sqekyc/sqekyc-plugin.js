@@ -105,6 +105,20 @@ const copyAndAddiOSLicenseFileToXcodeProject = (config, env, filename) => {
   );
 }
 
+const copyiOSFrameworkFile = (config, env) => {
+  return withDangerousMod(config, [
+    "ios",
+    async (config) => {
+      const root = config.modRequest.projectRoot
+      const sourcePath = path.resolve(__dirname, `./frameworks/${env}/ios`)
+      const destPath = `${root}/node_modules/@squantumengine/react-native-sqekyc/ios/Pods/sqekyc/sqekyc/Frameworks`
+
+      fs.copySync(sourcePath, path.join(destPath))
+      return config;
+    },
+  ])
+}
+
 const copyGithubPropertiesFile = (config) => {
   return withDangerousMod(config, [
     "android",
@@ -124,6 +138,7 @@ module.exports = function (config, { env }) {
   config = copyAndroidLicenseFile(config, env)
   config = copyAndAddiOSLicenseFileToXcodeProject(config, env, 'license.lic')
   config = copyAndAddiOSLicenseFileToXcodeProject(config, env, 'sdkLicense.lic')
+  config = copyiOSFrameworkFile(config, env)
   config = copyGithubPropertiesFile(config)
   config = withGithubPackageRepository(config)
   return config
