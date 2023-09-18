@@ -418,12 +418,12 @@ PODS:
   - RNScreens (3.20.0):
     - React-Core
     - React-RCTImage
-  - Sentry (8.9.2):
-    - Sentry/Core (= 8.9.2)
-    - SentryPrivate (= 8.9.2)
-  - Sentry/Core (8.9.2):
-    - SentryPrivate (= 8.9.2)
-  - SentryPrivate (8.9.2)
+  - Sentry (8.10.0):
+    - Sentry/Core (= 8.10.0)
+    - SentryPrivate (= 8.10.0)
+  - Sentry/Core (8.10.0):
+    - SentryPrivate (= 8.10.0)
+  - SentryPrivate (8.10.0)
   - SimpleKeychain (1.1.0)
   - sqeid (0.3.2):
     - Amplitude
@@ -670,8 +670,8 @@ SPEC CHECKSUMS:
   RNGestureHandler: 071d7a9ad81e8b83fe7663b303d132406a7d8f39
   RNReanimated: cc5e3aa479cb9170bcccf8204291a6950a3be128
   RNScreens: 218801c16a2782546d30bd2026bb625c0302d70f
-  Sentry: 4fe92c018ba6ed61ce1fc652dd1ccac34505a4c6
-  SentryPrivate: b58fc25b3a0ac7e3d4ec229be63d583e3314a47a
+  Sentry: 71cd4427146ac56eab6e70401ac7a24384c3d3b5
+  SentryPrivate: 9334613897c85a9e30f2c9d7a331af8aaa4fe71f
   SimpleKeychain: f8707c8e97b38c6a6e687b17732afc9bcef06439
   sqeid: 99440341f16f2b49eb3d1231b89d80439732b122
   sqekyc: 9e8e2a008ec61beb30d067270e2de0c8ecf1cc12
