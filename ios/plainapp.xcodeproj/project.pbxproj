@@ -10,13 +10,13 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		212443722F021F2C6D17C5FF /* Pods_plainapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A21D75403AF784C2725EFC /* Pods_plainapp.framework */; };
+		30C74068CE3B4C128D38777F /* sdkLicense.lic in Resources */ = {isa = PBXBuildFile; fileRef = F1BD163EC8324787944AB5DD /* sdkLicense.lic */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		43B4BC83FCFE4D549567F5C3 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F73E5B0A0E4F27AA49906D /* noop-file.swift */; };
-		5897BE936FEA4E7B738CEB95 /* Pods_plainapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A4C71D4E82B880F158E8BB /* Pods_plainapp.framework */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
+		B8DBA1B71DD34B20855A123E /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA9738B7E646B8BFEFF5EC /* noop-file.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		C4E4C05C79DC47C4A9B47CBC /* sdkLicense.lic in Resources */ = {isa = PBXBuildFile; fileRef = 38268E7AEA01490484DDAE96 /* sdkLicense.lic */; };
-		D5D5B10E34F8468D91AD2344 /* license.lic in Resources */ = {isa = PBXBuildFile; fileRef = 60AF90F79E0F4070BF33BB62 /* license.lic */; };
+		E510BBF5B1AF4258B6782155 /* license.lic in Resources */ = {isa = PBXBuildFile; fileRef = 25480A929ED14D81AB539B2C /* license.lic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,15 +27,15 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = plainapp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = plainapp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = plainapp/main.m; sourceTree = "<group>"; };
-		38268E7AEA01490484DDAE96 /* sdkLicense.lic */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = sdkLicense.lic; path = plainapp/sdkLicense.lic; sourceTree = "<group>"; };
-		60AF90F79E0F4070BF33BB62 /* license.lic */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = license.lic; path = plainapp/license.lic; sourceTree = "<group>"; };
-		60F73E5B0A0E4F27AA49906D /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "plainapp/noop-file.swift"; sourceTree = "<group>"; };
-		65A4C71D4E82B880F158E8BB /* Pods_plainapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plainapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A21D75403AF784C2725EFC /* Pods_plainapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plainapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25480A929ED14D81AB539B2C /* license.lic */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = license.lic; path = plainapp/license.lic; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-plainapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plainapp.debug.xcconfig"; path = "Target Support Files/Pods-plainapp/Pods-plainapp.debug.xcconfig"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-plainapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plainapp.release.xcconfig"; path = "Target Support Files/Pods-plainapp/Pods-plainapp.release.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = plainapp/SplashScreen.storyboard; sourceTree = "<group>"; };
+		B9EA9738B7E646B8BFEFF5EC /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "plainapp/noop-file.swift"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F1BD163EC8324787944AB5DD /* sdkLicense.lic */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = sdkLicense.lic; path = plainapp/sdkLicense.lic; sourceTree = "<group>"; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-plainapp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5897BE936FEA4E7B738CEB95 /* Pods_plainapp.framework in Frameworks */,
+				212443722F021F2C6D17C5FF /* Pods_plainapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,9 +62,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				60F73E5B0A0E4F27AA49906D /* noop-file.swift */,
-				38268E7AEA01490484DDAE96 /* sdkLicense.lic */,
-				60AF90F79E0F4070BF33BB62 /* license.lic */,
+				B9EA9738B7E646B8BFEFF5EC /* noop-file.swift */,
+				F1BD163EC8324787944AB5DD /* sdkLicense.lic */,
+				25480A929ED14D81AB539B2C /* license.lic */,
 			);
 			name = plainapp;
 			sourceTree = "<group>";
@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				65A4C71D4E82B880F158E8BB /* Pods_plainapp.framework */,
+				18A21D75403AF784C2725EFC /* Pods_plainapp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,7 +156,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				7095998BAD81B15F1D0A2FE6 /* [CP] Embed Pods Frameworks */,
+				5209ADEDE8BA32B9C1C1F8BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,8 +206,8 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				C4E4C05C79DC47C4A9B47CBC /* sdkLicense.lic in Resources */,
-				D5D5B10E34F8468D91AD2344 /* license.lic in Resources */,
+				30C74068CE3B4C128D38777F /* sdkLicense.lic in Resources */,
+				E510BBF5B1AF4258B6782155 /* license.lic in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +250,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7095998BAD81B15F1D0A2FE6 /* [CP] Embed Pods Frameworks */ = {
+		5209ADEDE8BA32B9C1C1F8BA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,7 +258,6 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-plainapp/Pods-plainapp-frameworks.sh",
 				"${PODS_ROOT}/../../node_modules/@squantumengine/react-native-sqekyc/ios/Pods/sqekyc/sqekyc/Frameworks/cereus.framework",
-				"${PODS_ROOT}/../../node_modules/@squantumengine/react-native-sqekyc/ios/Pods/sqekyc/sqekyc/Frameworks/EKYC.framework",
 				"${PODS_ROOT}/../../node_modules/@squantumengine/react-native-sqekyc/ios/Pods/sqekyc/sqekyc/Frameworks/VidaBaseSDK.framework",
 				"${PODS_ROOT}/../../node_modules/@squantumengine/react-native-sqekyc/ios/Pods/sqekyc/sqekyc/Frameworks/VidaSilentLiveness.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
@@ -266,7 +265,6 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cereus.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EKYC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VidaBaseSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VidaSilentLiveness.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
@@ -284,16 +282,24 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-plainapp/Pods-plainapp-resources.sh",
 				"${PODS_ROOT}/Amplitude/Sources/Resources/ComodoRsaDomainValidationCA.der",
+				"${PODS_CONFIGURATION_BUILD_DIR}/BottomSheetSwiftUI/BottomSheet_BottomSheet.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-				"${PODS_ROOT}/../../node_modules/@squantumengine/react-native-sqekyc/ios/Pods/sqekyc/sqekyc/Resources/SilentLivenessModel.bundle",
+				"${PODS_ROOT}/../../node_modules/@squantumengine/react-native-sqekyc/ios/Pods/sqekyc/sqekyc/Resources/Fonts/Montserrat-Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/@squantumengine/react-native-sqekyc/ios/Pods/sqekyc/sqekyc/Resources/Fonts/Montserrat-SemiBold.ttf",
+				"${PODS_ROOT}/../../node_modules/@squantumengine/react-native-sqekyc/ios/Pods/sqekyc/sqekyc/Resources/LivenessResources/st_silent_liveness_resource.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/sqekyc/Media.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoRsaDomainValidationCA.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BottomSheet_BottomSheet.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SilentLivenessModel.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Montserrat-Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Montserrat-SemiBold.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/st_silent_liveness_resource.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Media.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -329,7 +335,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
-				43B4BC83FCFE4D549567F5C3 /* noop-file.swift in Sources */,
+				B8DBA1B71DD34B20855A123E /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

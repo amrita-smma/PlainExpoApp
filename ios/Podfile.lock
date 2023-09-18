@@ -2,7 +2,9 @@ PODS:
   - Amplitude (8.17.1):
     - AnalyticsConnector (~> 1.0.0)
   - AnalyticsConnector (1.0.1)
+  - AppStorage (1.0.4)
   - boost (1.76.0)
+  - BottomSheetSwiftUI (3.1.1)
   - DoubleConversion (1.1.6)
   - EXApplication (5.1.1):
     - ExpoModulesCore
@@ -431,7 +433,10 @@ PODS:
     - React-Core
     - Sentry
     - SimpleKeychain
-  - sqekyc (0.2.0):
+  - sqekyc (0.8.0):
+    - Amplitude (= 8.17.1)
+    - AppStorage (= 1.0.4)
+    - BottomSheetSwiftUI (= 3.1.1)
     - OpenCV (= 2.4.9)
     - React-Core
   - Yoga (1.14.0)
@@ -497,6 +502,8 @@ SPEC REPOS:
   trunk:
     - Amplitude
     - AnalyticsConnector
+    - AppStorage
+    - BottomSheetSwiftUI
     - fmt
     - JWTDecode
     - libevent
@@ -616,7 +623,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Amplitude: a43a03b98ce379b1fd7a08b5733d199ff5d9130f
   AnalyticsConnector: eccd7e1cd3dd18e6bd09ac2506e37d4ed43ba3f4
+  AppStorage: c2a9e2c79c14f4893b9070ec7193d3c5fe3c2e8c
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
+  BottomSheetSwiftUI: 08b5ada340a164b7ef49cf04b6733a0bd3f02957
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   EXApplication: d8f53a7eee90a870a75656280e8d4b85726ea903
   EXConstants: f348da07e21b23d2b085e270d7b74f282df1a7d9
@@ -674,7 +683,7 @@ SPEC CHECKSUMS:
   SentryPrivate: 9334613897c85a9e30f2c9d7a331af8aaa4fe71f
   SimpleKeychain: f8707c8e97b38c6a6e687b17732afc9bcef06439
   sqeid: 99440341f16f2b49eb3d1231b89d80439732b122
-  sqekyc: 9e8e2a008ec61beb30d067270e2de0c8ecf1cc12
+  sqekyc: d1af139c7672c3a91b3e6c5100b167120be609af
   Yoga: 065f0b74dba4832d6e328238de46eb72c5de9556
 
 PODFILE CHECKSUM: 137262e3321b4059b53cb78611742ecfa50b9c3f
