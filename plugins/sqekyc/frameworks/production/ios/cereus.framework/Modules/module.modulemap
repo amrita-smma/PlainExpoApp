@@ -1,0 +1,6 @@
+framework module cereus {
+  umbrella header "cereus.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,47 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VidaSilentLiveness
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CommonCrypto
+import Foundation
+import Swift
+import UIKit
+import VidaBaseSDK
+@_exported import VidaSilentLiveness
+import _Concurrency
+import _StringProcessing
+@_inheritsConvenienceInitializers @objc public class VIDASecuritySoft : ObjectiveC.NSObject {
+  @objc public static var sharedInstance: VidaSilentLiveness.VIDASecuritySoft
+  @objc public func getUniqueID(_ completion: ((Swift.String?) -> Swift.Void)?)
+  public func generateCSR(_ country: Swift.String?, org: Swift.String?, orgUnit: Swift.String?, state: Swift.String?, commonName: Swift.String?) -> Swift.String?
+  @objc public func generateHmacFromEncryptedKey(data: Swift.String, completion: ((Swift.String?) -> Swift.Void))
+  @objc public func encryptPayLoad(payLoad: Swift.String, _ completion: ((Foundation.Data?, (any Swift.Error)?) -> Swift.Void)?)
+  @objc public func decryptPayLoad(cipher: Foundation.Data, _ completion: ((Swift.String?, (any Swift.Error)?) -> Swift.Void)? = nil)
+  @objc public func encryptSessionPayLoad(payLoad: Swift.String, key: Swift.String, completion: ((Foundation.Data?, (any Swift.Error)?) -> Swift.Void)?)
+  @objc public func decryptSessionPayLoad(payLoad: Foundation.Data, key: Swift.String, completion: @escaping ((Swift.String?, (any Swift.Error)?) -> Swift.Void))
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct JSONEncrypter : Swift.Codable {
+  public let encryptedData: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers public class CCCrypto : ObjectiveC.NSObject {
+  public func sha256(data: Foundation.Data) -> Foundation.Data
+  public func getBase64OfSHA256(data: Foundation.Data, truncateLength: Swift.Int) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+public class Decrypter : Swift.Codable {
+  public var encryptedData: Swift.String?
+  public init(encryptedData: Swift.String?)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc public class CompositeLiveness : ObjectiveC.NSObject {
+  @objc public static func startCompositeLiveness(apiKey: Swift.String, licenseKey: Swift.String, imagebase64Str: Swift.String, completion: @escaping ((Swift.Bool, [VidaBaseSDK.ErrorResponse]?) -> Swift.Void))
+  @objc override dynamic public init()
+  @objc deinit
+}

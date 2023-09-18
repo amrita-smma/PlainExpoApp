@@ -1,0 +1,11 @@
+framework module VidaSilentLiveness {
+  umbrella header "VidaSilentLiveness.h"
+
+  export *
+  module * { export * }
+}
+
+module VidaSilentLiveness.Swift {
+  header "VidaSilentLiveness-Swift.h"
+  requires objc
+}

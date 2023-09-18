@@ -1,0 +1,4 @@
+framework module VidaBaseSDK {
+  header "VidaBaseSDK-Swift.h"
+  requires objc
+}
